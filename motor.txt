@@ -1,0 +1,16 @@
+
+int led = 10;
+int en = 8;
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(led, OUTPUT);
+  pinMode(en, OUTPUT);
+  digitalWrite(en, HIGH);
+}
+
+void loop() {
+    digitalWrite(led, HIGH);
+    delayMicroseconds(1000);
+    digitalWrite(led, LOW);
+    delayMicroseconds(1000);
+}
